@@ -3,7 +3,7 @@ import { logOut } from "../utils/logOut";
 import { errorToast } from "../utils/customToast";
 import { toast } from "react-toastify";
 
-const api = axios.create({ baseURL: "https://daltonz-backend.darkube.app" });
+const api = axios.create({ baseURL: "localhost:3000" });
 
 api.interceptors.request.use(function (config) {
   const token = localStorage.getItem("token");

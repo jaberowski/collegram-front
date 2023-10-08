@@ -105,7 +105,6 @@ function App() {
           <Route path="error" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
-      <ReactQueryDevtools />
       <ToastContainer
         position="bottom-center"
         autoClose={3000}
