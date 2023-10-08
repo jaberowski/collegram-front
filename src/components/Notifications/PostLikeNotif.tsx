@@ -21,7 +21,7 @@ const PostLikeNotif: React.FC<IPostLikeNotif> = ({ notification }) => {
   return (
     <div className="flex gap-4 font-secondary ">
       <Link
-        to={`/app/people/user/${notification.user.id}/post/${notification.post.id}`}
+        to={`/app/people/user/${notification.targetUser.id}/post/${notification.post.id}`}
       >
         <img
           src={notification.post.images[0].url || personIcon}
